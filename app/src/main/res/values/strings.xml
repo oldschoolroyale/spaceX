@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SpaceX</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_connection_absence">Error connection absence</string>
+    <string name="error">Unknown error</string>
+    <string name="year_build">Year build</string>
+    <string name="rockets">Rockets</string>
+</resources>
