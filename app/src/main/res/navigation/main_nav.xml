@@ -8,5 +8,14 @@
         android:id="@+id/latestFragment2"
         android:name="com.brm.spacex.ui.latest.LatestFragment"
         android:label="Space X"
-        tools:layout="@layout/fragment_latest" />
+        tools:layout="@layout/fragment_latest" >
+        <action
+            android:id="@+id/action_latestFragment2_to_shipFragment"
+            app:destination="@id/shipFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shipFragment"
+        android:name="com.brm.spacex.ui.ship.ShipFragment"
+        android:label="fragment_ship"
+        tools:layout="@layout/fragment_ship" />
 </navigation>

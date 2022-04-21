@@ -1,10 +1,12 @@
 package com.brm.spacex.adapter
 
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.brm.spacex.R
 import com.brm.spacex.data.model.ship.Ship
@@ -42,8 +44,14 @@ class ShipsAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
         fun bind(ship: Ship){
             Picasso.get().load(ship.image).into(image)
-            title.text = ship.name
-            description.text = "${itemView.context.getString(R.string.year_build)}: ${ship.year_built}"
+            title.text = ship.id
+            description.text = "${itemView.context.getString(R.string.type)}: ${ship.name}"
+            itemView.setOnClickListener {
+                val bundle = Bundle()
+                bundle.putString("id", ship.id)
+                itemView.findNavController().navigate(
+                    R.id.action_latestFragment2_to_shipFragment, bundle)
+            }
         }
     }
 }

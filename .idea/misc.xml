@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_latest.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_ship.xml" value="0.33" />
         <entry key="app/src/main/res/layout/launch_item.xml" value="0.14719202898550723" />
         <entry key="app/src/main/res/layout/ships_item.xml" value="0.14719202898550723" />
       </map>

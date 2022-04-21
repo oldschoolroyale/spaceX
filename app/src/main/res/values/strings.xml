@@ -6,4 +6,9 @@
     <string name="error">Unknown error</string>
     <string name="year_build">Year build</string>
     <string name="rockets">Rockets</string>
+    <string name="type">Type</string>
+    <string name="ships">Ships</string>
+    <string name="home_port">Home port</string>
+    <string name="weight">Weight</string>
+    <string name="abs">Abs</string>
 </resources>
